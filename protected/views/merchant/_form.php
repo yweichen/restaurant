@@ -7,11 +7,13 @@
 <div class="form">
 
     <?php
-    $form = $this->beginWidget('CActiveForm', array(
+    $form = $this->beginWidget('bootstrap.widgets.TbActiveForm', array(
         'id' => 'merchant-form',
         'enableAjaxValidation' => false,
         'enableClientValidation' => true,
-        'focus' => array($model, 'login_email')
+        'focus' => array($model, 'login_email'),
+        'type'=>'inline',
+        'htmlOptions'=>array('class'=>'well'),
     ));
     ?>
 
